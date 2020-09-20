@@ -17,7 +17,7 @@ bool Stack::push(int x) {
 		return false;
 	}
 	else {
-		a[++top] = x; // 추가한 코드 : ++top을 이용하여 해당 인덱스 위치에 추가한 값을 대입, top의 값을 증가후 사용하는 것이 중요
+		a[++top] = x; // 추가한 코드 : ++top을 이용하여 해당 인덱스 위치에 추가한 값을 대입, 초기화된 수가 -1 이기 때문에 먼저 ++ 한 뒤 top을 사용
 		std::cout << x << " 이 스택에 들어갔습니다." << std::endl;
 		return true;
 	}
