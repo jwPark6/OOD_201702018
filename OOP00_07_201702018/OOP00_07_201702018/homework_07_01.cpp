@@ -5,7 +5,6 @@
 class AnyString {
 	std::string anyString;
 
-
 public:
 	AnyString(const std::string& anyString) : anyString(anyString) {}
 	std::string getAnyString() {
@@ -16,9 +15,8 @@ public:
 
 std::ofstream& operator<<(std::ofstream& out, AnyString &a) {//연산자 오버로딩 정의
 	out << a.getAnyString();//매개변수로 받은 객체에 저장
-	return;
+	return out;
 }
-
 
 int main() {
 	std::ofstream out("testOveroding.txt");
