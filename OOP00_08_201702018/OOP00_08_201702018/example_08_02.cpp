@@ -1,7 +1,7 @@
 #include <iostream>
 class Strategy{//기본 클래스
 public :
-	virtual int doOperation(int num1, int num2) = 0;
+	virtual int doOperation(int num1, int num2)=0;
 };
 
 class OperationAdd : public Strategy {//각 연산을 다시 지정하기 위한 클래스
